@@ -14,7 +14,7 @@ function hello(name) {
  * @param {string} propertyValue
  * @param {{force: boolean}} options
  */
-const updateProp = (object, propertyName, propertyValue, options = {}) => {
+const updateProp = (object, propertyName, propertyValue, options = { force: false }) => {
     if (object[propertyName] && options.force) {
         object[propertyName] = propertyValue;
     } else if (object[propertyName]) {

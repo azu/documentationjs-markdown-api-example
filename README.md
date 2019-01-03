@@ -41,7 +41,7 @@ update property with `propertyValue` if the `propertyName` does not exists
 - `object` **any** 
 - `propertyName` **[string][7]** 
 - `propertyValue` **[string][7]** 
-- `options` **{force: [boolean][8]}**  (optional, default `{}`)
+- `options` **{force: [boolean][8]}**  (optional, default `{force:false}`)
 
 ### report
 

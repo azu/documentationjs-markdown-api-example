@@ -21,8 +21,9 @@ Automatically, update "Usage" section with documentation result.
 - [updateProp][4]
   - [Parameters][5]
   - [Examples][6]
-- [report][7]
-  - [Parameters][8]
+- [Myclass][7]
+  - [report][8]
+    - [Parameters][9]
 
 ### hello
 
@@ -30,7 +31,7 @@ Return Hello message
 
 #### Parameters
 
-- `name` **[string][9]** 
+- `name` **[string][10]** 
 
 #### Examples
 
@@ -38,7 +39,7 @@ Return Hello message
 hello("john"); // => "Hello, john"
 ```
 
-Returns **[string][9]** 
+Returns **[string][10]** 
 
 ### updateProp
 
@@ -47,9 +48,9 @@ update property with `propertyValue` if the `propertyName` does not exists
 #### Parameters
 
 - `object` **any** 
-- `propertyName` **[string][9]** 
-- `propertyValue` **[string][9]** 
-- `options` **{force: [boolean][10]}**  (optional, default `{force:false}`)
+- `propertyName` **[string][10]** 
+- `propertyValue` **[string][10]** 
+- `options` **{force: [boolean][11]}**  (optional, default `{force:false}`)
 
 #### Examples
 
@@ -59,13 +60,15 @@ update(object, "key", "value", { force: true })
 console.log(object); // { key: "value" }
 ```
 
-### report
+### Myclass
+
+#### report
 
 report message
 
-#### Parameters
+##### Parameters
 
-- `message` **[string][9]** 
+- `message` **[string][10]** 
 
 [1]: #hello
 
@@ -79,13 +82,15 @@ report message
 
 [6]: #examples-1
 
-[7]: #report
+[7]: #myclass
 
-[8]: #parameters-2
+[8]: #report
 
-[9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[9]: #parameters-2
 
-[10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[11]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
 ## Changelog
 

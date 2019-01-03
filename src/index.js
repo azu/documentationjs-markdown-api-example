@@ -30,6 +30,9 @@ const updateProp = (object, propertyName, propertyValue, options = { force: fals
     }
 };
 
+/**
+ * @class
+ */
 class Myclass {
     /**
      * report message

@@ -1,0 +1,30 @@
+{
+  "name": "documentationjs-markdown-api-example",
+  "version": "1.0.0",
+  "description": "An example for documentationjs + markdown reference.",
+  "homepage": "https://github.com/azu/documentationjs-markdown-api-example",
+  "bugs": {
+    "url": "https://github.com/azu/documentationjs-markdown-api-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/documentationjs-markdown-api-example.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "src/"
+  ],
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "update:usage": "documentation build -f md src/index.js | add-text-to-markdown README.md --section \"Usage\" --write"
+  },
+  "devDependencies": {
+    "add-text-to-markdown": "^2.0.0",
+    "documentation": "^9.1.1"
+  }
+}

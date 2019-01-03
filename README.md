@@ -17,10 +17,12 @@ Automatically, update "Usage" section with documentation result.
 
 - [hello][1]
   - [Parameters][2]
-- [updateProp][3]
-  - [Parameters][4]
-- [report][5]
-  - [Parameters][6]
+  - [Examples][3]
+- [updateProp][4]
+  - [Parameters][5]
+  - [Examples][6]
+- [report][7]
+  - [Parameters][8]
 
 ### hello
 
@@ -28,9 +30,15 @@ Return Hello message
 
 #### Parameters
 
-- `name` **[string][7]** 
+- `name` **[string][9]** 
 
-Returns **[string][7]** 
+#### Examples
+
+```javascript
+hello("john"); // => "Hello, john"
+```
+
+Returns **[string][9]** 
 
 ### updateProp
 
@@ -39,9 +47,17 @@ update property with `propertyValue` if the `propertyName` does not exists
 #### Parameters
 
 - `object` **any** 
-- `propertyName` **[string][7]** 
-- `propertyValue` **[string][7]** 
-- `options` **{force: [boolean][8]}**  (optional, default `{force:false}`)
+- `propertyName` **[string][9]** 
+- `propertyValue` **[string][9]** 
+- `options` **{force: [boolean][10]}**  (optional, default `{force:false}`)
+
+#### Examples
+
+```javascript
+const object = {};
+update(object, "key", "value", { force: true })
+console.log(object); // { key: "value" }
+```
 
 ### report
 
@@ -49,23 +65,27 @@ report message
 
 #### Parameters
 
-- `message` **[string][7]** 
+- `message` **[string][9]** 
 
 [1]: #hello
 
 [2]: #parameters
 
-[3]: #updateprop
+[3]: #examples
 
-[4]: #parameters-1
+[4]: #updateprop
 
-[5]: #report
+[5]: #parameters-1
 
-[6]: #parameters-2
+[6]: #examples-1
 
-[7]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[7]: #report
 
-[8]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[8]: #parameters-2
+
+[9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
 ## Changelog
 

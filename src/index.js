@@ -2,6 +2,8 @@
  * Return Hello message
  * @param {string} name
  * @returns {string}
+ * @example
+ * hello("john"); // => "Hello, john"
  */
 function hello(name) {
     return `Hello, ${name}`;
@@ -13,6 +15,10 @@ function hello(name) {
  * @param {string} propertyName
  * @param {string} propertyValue
  * @param {{force: boolean}} options
+ * @example
+ * const object = {};
+ * update(object, "key", "value", { force: true })
+ * console.log(object); // { key: "value" }
  */
 const updateProp = (object, propertyName, propertyValue, options = { force: false }) => {
     if (object[propertyName] && options.force) {
